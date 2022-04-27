@@ -9,18 +9,18 @@ docker-compose up
 docker-compose down --rmi all -v
 ```
 
-## Clear volume
+## CLEAR VOLUME
 ```
 docker volume rm $(docker volume ls -q)
 ```
 
 # MANUAL TERMINAL
-## Start
+## START
 ```
 docker start [name_container]
 ```
 
-## Stop
+## STOP
 ```
 docker stop [name_container]
 ```
@@ -42,12 +42,12 @@ docker ps -a
 
 ## FOR DEVELOPING
 
-### Run and want delete after stop
+### RUN AND WANT DELETE AFTER STOP 
 ```
 docker run --name [name_container] -p 4000:4000 --rm  [images]:[tag]
 ```
 
-### Run and Use Volume
+### RUN AND USE VOLUME
 ```
 docker run --name [name_container] -p 4000:4000 --rm -v [relative_path]:/app -v /app/node_modules [images]:[tag]
 ```
